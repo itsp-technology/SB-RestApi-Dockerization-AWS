@@ -1,4 +1,4 @@
 FROM openjdk:17
-COPY target/SB-DockerizationAppAWSLinux-0.0.1-SNAPSHOT.jar .
+COPY target/sb-restapi .
 EXPOSE 8080
-CMD [ "java" ,"-jar","SB-DockerizationAppAWSLinux-0.0.1-SNAPSHOT.jar" ]
+CMD [ "java" ,"-jar","sb-restapi.jar" ]
